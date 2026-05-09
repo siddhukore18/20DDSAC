@@ -5,22 +5,23 @@ class ArrayDemo{
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter size of an array :");
-		int n = sc.nextInt();
+		int num = sc.nextInt();
 
-		int arr[] = new int[n];
+		int arr[] = new int[num];
 	        System.out.println("Enter array elements:");
-		for(int i = 0 ; i < n ; i++){
+		for(int i = 0 ; i < num ; i++){
 			
 			arr[i] = sc.nextInt();
 		}
-		System.out.print("Max Ele  of Array :");
-		int max = Integer.MAX_VALUE;
+		
+		int p = 0 , n = 0;
 
-		for(int i = 0 ; i < n ; i++){
+		for(int i = 0 ; i < num ; i++){
 
-                        if(arr[i]<max) max =arr[i];
+                        if(arr[i]%2==0) p++;
+			else n++;
                 }	
 	
-		System.out.println(max);
+		System.out.println("even :"+p+"\todd : "+n);
 	}
 }
