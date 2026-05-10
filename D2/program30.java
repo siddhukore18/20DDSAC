@@ -13,24 +13,14 @@ class ArrayDemo{
 			arr[i] = sc.nextInt();
 		}
 
-		
-		
-		int sum =0;
-		for(int i = 0 ; i < n ; i++ ){
-		
-			if(arr[i]%2==0){
-			       	sum += arr[i];
-			        	
-	                       
-			}
+		int arr2[] = new int[arr.length]; 
 
-		}
+		for(int i=0 ; i< arr2.length ; i++) arr2[i] = arr[i];
 
-		
+		System.out.println("normal array : ");
+		for(int i=0 ; i< arr.length ; i++) System.out.print(arr[i]+"\t");
 
-		System.out.println("sum of all even number is "+sum);
-
-		
-
+		System.out.println("copy array : ");
+                for(int i=0 ; i< arr2.length ; i++) System.out.print(arr2[i]+"\t");
 	}
 }

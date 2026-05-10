@@ -13,24 +13,14 @@ class ArrayDemo{
 			arr[i] = sc.nextInt();
 		}
 
-		
-		
-		int sum =0;
-		for(int i = 0 ; i < n ; i++ ){
-		
-			if(arr[i]%2==0){
-			       	sum += arr[i];
-			        	
-	                       
-			}
+		int arrsq[] = new int[arr.length]; 
 
-		}
+		for(int i=0 ; i< arrsq.length ; i++) arrsq[i] = arr[i]*arr[i];
 
-		
+		System.out.println("normal array : ");
+		for(int i=0 ; i< arrsq.length ; i++) System.out.print(arr[i]+"\t");
 
-		System.out.println("sum of all even number is "+sum);
-
-		
-
+		System.out.println("squre0 array : ");
+                for(int i=0 ; i< arrsq.length ; i++) System.out.print(arrsq[i]+"\t");
 	}
 }

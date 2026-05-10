@@ -1,5 +1,16 @@
 import java.util.*;
 class ArrayDemo{
+	static boolean isPS(int num){
+	
+		double d = Math.sqrt(num);
+		int n =(int)Math.sqrt(num);
+		if (n*n == num){
+		
+			return true;
+
+		}   
+		return false ;	
+	}
 
 	public static void main(String [] args ){
 	
@@ -13,24 +24,17 @@ class ArrayDemo{
 			arr[i] = sc.nextInt();
 		}
 
+		int count = 0;
+
+		for( int i = 0  ; i< n ; i++){
 		
-		
-		int sum =0;
-		for(int i = 0 ; i < n ; i++ ){
-		
-			if(arr[i]%2==0){
-			       	sum += arr[i];
-			        	
-	                       
+			if( isPS(arr[i])){
+			
+				count ++;
+
 			}
-
 		}
-
-		
-
-		System.out.println("sum of all even number is "+sum);
-
-		
-
+		 
+		System.out.println(count );
 	}
 }

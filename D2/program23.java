@@ -12,23 +12,22 @@ class ArrayDemo{
 
 			arr[i] = sc.nextInt();
 		}
+		
+		System.out.println("normal array : ");
+                for(int i=0 ; i< arr.length ; i++) System.out.print(arr[i]+"\t");
 
+		for(int i=0 ; i< n ; i++){
 		
-		
-		int sum =0;
-		for(int i = 0 ; i < n ; i++ ){
-		
-			if(arr[i]%2==0){
-			       	sum += arr[i];
-			        	
-	                       
-			}
-
+			
+			if(arr[i]<0) arr[i]= 0;
+			
 		}
-
 		
 
-		System.out.println("sum of all even number is "+sum);
+		System.out.println("updated  array : ");
+		for(int i=0 ; i< arr.length ; i++) System.out.print(arr[i]+"\t");
+		
+		System.out.println();
 
 		
 
