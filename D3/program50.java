@@ -36,8 +36,7 @@ class ArrayDemo{
 
 		for(int i=0; i<farr.length;i++){
 		
-			if(farr[i]>1) System.out.println(i+" -> "+farr[i]);
-			
+			if(farr[i]==1) System.out.println(i+" -> "+farr[i]);
 		}
 	}
 }
