@@ -23,7 +23,8 @@ class ArrayDemo{
                         arr2[i] = sc.nextInt();
                 }
 
-		
+		Arrays.sort(arr1);
+		Arrays.sort(arr2);
 
 
 		boolean flag = true ;
@@ -42,10 +43,10 @@ class ArrayDemo{
 
 		if(flag){
 		
-			System.out.println("array1 and array2 are same in order and elements");
+			System.out.println("array1 and array2 are same in  elements");
 		}else{
 		
-			System.out.println("array1 and array2 are not same in order or elements");
+			System.out.println("array1 and array2 are not same in  elements");
 		}
 
 
