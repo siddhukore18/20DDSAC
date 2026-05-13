@@ -10,19 +10,21 @@ class StringDemo{
 		System.out.println("Enter a string :");
 		String str = sc.nextLine();
 		
-		int a=0,b=0;
+		int count = 0;
 		boolean flag = true ;
 		//if(str.charAt(0)!=' ') System.out.print(str.charAt(0));
 		for(int i=1 ; i<str.length(); i++){
-			if(str.charAt(i)==' '||i==str.length()-1){
-
-				if(str.charAt(i-1)==str.charAt(a))
-					System.out.println(str.substring(a,i+1));
-				a=i+1;
+			if(str.charAt(i)==' ') flag = true ;
+			else if((str.charAt(i)=='a'||str.charAt(i)=='A')&&flag){
+				count ++;
+				flag = false;
+			}
 
 				
-			}	
+			
 		}
+
+		System.out.println(count);
 		
 			
 	}
