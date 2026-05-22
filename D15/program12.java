@@ -1,5 +1,5 @@
 //leetcode 229
-
+import java.util.*;
 class Solution {
     public List<Integer> majorityElement(int[] nums) {
 
