@@ -1,5 +1,5 @@
 //leetcode 961
-
+import java.util.*; 
 
 class Solution {
     public int repeatedNTimes(int[] nums) {
