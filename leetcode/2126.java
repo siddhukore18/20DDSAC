@@ -1,5 +1,5 @@
 //leetcode 2126
-
+import java.util.*;
 
 class Solution {
     public boolean asteroidsDestroyed(int mass, int[] asteroids) {
