@@ -1,5 +1,5 @@
 ///leetcode 442
-import java.utils.*;
+import java.util.*;
 class Solution {
     public List<Integer> findDuplicates(int[] nums) {
 
